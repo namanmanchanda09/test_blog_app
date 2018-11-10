@@ -176,3 +176,21 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 38ms (Views: 28.6ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-10 23:34:02 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/namanmanchanda/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/namanmanchanda/.rvm/gems/ruby-2.4.2/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/namanmanchanda/.rvm/gems/ruby-2.4.2/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (14.8ms)
+Completed 200 OK in 34ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-11-10 23:34:07 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:15
+  Rendered articles/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 193ms (Views: 181.3ms | ActiveRecord: 1.1ms)
+
+
